@@ -25,17 +25,19 @@
             <div id="wrap">
                 <div id="text">
                     <div id="code"> <font color="#FF0000"> <span class="say">美丽的郝小宝:</span><br>
-                      <span class="say"> 我知道我不会甜言蜜语，</span><br>
-                      <span class="say"> 但是我会用行动证明一切</span><br>
-                      <span class="say">你说我啰嗦，</span><br>             
-                          <span class="say"> 有些东西因为越在乎所以越怕失去</span><br>
-                      <span class="say">因为我太爱你了，所以我害怕失去你</span><br>
-                      <span class="say">因为我太爱你了，所以我对你总啰嗦</span><br>
-                      <span class="say">希望可以执子之手，与子偕老</span><br>
-                      <span class="say">如果上天让我许三个愿望，</span><br>
-                              <span class="say">第一个是今生今世和你在一起， </span><br>
-                           <span class="say"> 第二个是再生再世和你在一起，</span><br>
-                           <span class="say">第三个是永生永世和你不分离 </span><br>
+                      <span class="say">    我很努力的想成为你心中的那个他,</span>
+                      <span class="say">我并不太会用语言来表达,也不擅长揣摩小宝的内心,</span>
+                      <span class="say">但是,我会用行动来表达你在我心中的位置,</span>
+                      <span class="say">在分开的这些日子里我时常会回忆起原来幸福的时光,</span>         
+		      <span class="say">我们一起在重庆吃火锅,我们一起在成都看熊猫,</span>
+		      <span class="say">我们一起在北京会好友,我们一起在厦门看海,</span>
+		      <span class="say">我们本该一起漫步在墨尔本的街道,去悉尼看海,</span><br>
+		      <span class="say">我们一起度过了生命中最好的年华,</span>
+                      <span class="say">我们也会在当下努力工作,为美好的未来打拼.</span><br>
+                      <span class="say">    不是最好的时光有你在,</span>
+                      <span class="say">而是有你在,我才有了最好的,</span>
+                      <span class="say">岁月被烙印在相机里,而你被烙印在我心里,</span>
+                      <span class="say">执子之手，与子偕老.</span><br>
                       <span class="say"><span class="space"></span> -- 爱你的张大宝</span> </font>
                           <br />
                           <br />
@@ -58,8 +60,26 @@
 		     </ul>
 		</div> -->
                 <canvas id="canvas" width="1100" height="680"></canvas>
-		<img id="img1" width="0" height="0" src="https://drive.google.com/file/d/1vnmB8Adgxjbp0sN4_HHAmfQ0lnDuVv72/view?usp=sharing" alt="The Scream">
-		<img id="img2" width="0" height="0" src="images/slide2.jpg" alt="The Scream">
+		<img id="img1" width="0" height="0" src="images/IMG_1017.JPG" alt="1">
+		<img id="img2" width="0" height="0" src="images/IMG_1019.JPG" alt="2">
+		<img id="img3" width="0" height="0" src="images/IMG_1001.JPG" alt="3">
+		<img id="img4" width="0" height="0" src="images/IMG_1003.JPG" alt="4">
+		<img id="img5" width="0" height="0" src="images/IMG_1010.JPG" alt="5">
+		<img id="img6" width="0" height="0" src="images/IMG_E7804.JPG" alt="6">
+		<img id="img7" width="0" height="0" src="images/IMG_E9159.JPG" alt="7">
+		<img id="img8" width="0" height="0" src="images/IMG_E9358.JPG" alt="8">
+		<img id="img9" width="0" height="0" src="images/IMG_E9552.JPG" alt="9">
+		<img id="img10" width="0" height="0" src="images/IMG_6243.JPG" alt="10">
+		<img id="img11" width="0" height="0" src="images/IMG_5615.JPG" alt="11">
+		<img id="img12" width="0" height="0" src="images/IMG_6185.JPG" alt="12">
+		<img id="img13" width="0" height="0" src="images/IMG_5563.JPG" alt="13">
+		<img id="img14" width="0" height="0" src="images/IMG_6780.JPG" alt="14">
+		<img id="img15" width="0" height="0" src="images/IMG_1750.jpg" alt="15">
+		<img id="img16" width="0" height="0" src="images/IMG_1880.JPG" alt="16">
+		<img id="img17" width="0" height="0" src="images/IMG_6200.JPG" alt="17">
+		<img id="img18" width="0" height="0" src="images/IMG_6237.JPG" alt="18">
+		<img id="img19" width="0" height="0" src="images/IMG_6674.JPG" alt="19">
+		<img id="img20" width="0" height="0" src="images/IMG_1015.JPG" alt="20">
             </div>
             
         </div>
@@ -142,20 +162,147 @@
 	var imgAnimate = eval(Jscex.compile("async", function () {
 	    var ctx = tree.ctx;
 	    var img = document.getElementById("img1");
-            ctx.drawImage(img, 0, 0, 1100, 680);
+            ctx.drawImage(img, 150, 40, 800, 600);
 	    var time = 1;
-	    while(time < 300){
+            var endTime = 200;
+	    while(time < endTime){
       	     	$await(Jscex.Async.sleep(10));
                 time = time+1;
 	    }
             img = document.getElementById("img2");
-            ctx.drawImage(img, 0, 0, 1100, 680);
+            ctx.drawImage(img, 150, 40, 800, 600);
 	    var time = 1;
-	    while(time < 300){
+	    while(time < endTime){
       	     	$await(Jscex.Async.sleep(10));
                 time = time+1;
 	    }
-            ctx.clearRect(0, 0, 1100, 680);
+	    var img = document.getElementById("img3");
+            ctx.drawImage(img, 150, 40, 800, 600);
+	    var time = 1;
+	    while(time < endTime){
+      	     	$await(Jscex.Async.sleep(10));
+                time = time+1;
+	    }
+	    var img = document.getElementById("img4");
+            ctx.drawImage(img, 150, 40, 800, 600);
+	    var time = 1;
+	    while(time < endTime){
+      	     	$await(Jscex.Async.sleep(10));
+                time = time+1;
+	    }
+	    var img = document.getElementById("img5");
+            ctx.drawImage(img, 150, 40, 800, 600);
+	    var time = 1;
+	    while(time < endTime){
+      	     	$await(Jscex.Async.sleep(10));
+                time = time+1;
+	    }
+	    var img = document.getElementById("img6");
+            ctx.drawImage(img, 150, 40, 800, 600);
+	    var time = 1;
+	    while(time < endTime){
+      	     	$await(Jscex.Async.sleep(10));
+                time = time+1;
+	    }
+	    var img = document.getElementById("img7");
+            ctx.drawImage(img, 150, 40, 800, 600);
+	    var time = 1;
+	    while(time < endTime){
+      	     	$await(Jscex.Async.sleep(10));
+                time = time+1;
+	    }
+	    var img = document.getElementById("img8");
+            ctx.drawImage(img, 150, 40, 800, 600);
+	    var time = 1;
+	    while(time < endTime){
+      	     	$await(Jscex.Async.sleep(10));
+                time = time+1;
+	    }
+	    var img = document.getElementById("img9");
+            ctx.drawImage(img, 150, 40, 800, 600);
+	    var time = 1;
+	    while(time < endTime){
+      	     	$await(Jscex.Async.sleep(10));
+                time = time+1;
+	    }
+	    var img = document.getElementById("img10");
+            ctx.drawImage(img, 150, 40, 800, 600);
+	    var time = 1;
+	    while(time < endTime){
+      	     	$await(Jscex.Async.sleep(10));
+                time = time+1;
+	    }
+	    var img = document.getElementById("img11");
+            ctx.drawImage(img, 150, 40, 800, 600);
+	    var time = 1;
+	    while(time < endTime){
+      	     	$await(Jscex.Async.sleep(10));
+                time = time+1;
+	    }
+            img = document.getElementById("img12");
+            ctx.drawImage(img, 150, 40, 800, 600);
+	    var time = 1;
+	    while(time < endTime){
+      	     	$await(Jscex.Async.sleep(10));
+                time = time+1;
+	    }
+	    var img = document.getElementById("img13");
+            ctx.drawImage(img, 150, 40, 800, 600);
+	    var time = 1;
+	    while(time < endTime){
+      	     	$await(Jscex.Async.sleep(10));
+                time = time+1;
+	    }
+	    var img = document.getElementById("img14");
+            ctx.drawImage(img, 150, 40, 800, 600);
+	    var time = 1;
+	    while(time < endTime){
+      	     	$await(Jscex.Async.sleep(10));
+                time = time+1;
+	    }
+            ctx.clearRect(150, 40, 800, 600);
+	    var img = document.getElementById("img15");
+            ctx.drawImage(img, 265, 90, 510, 680);
+	    var time = 1;
+	    while(time < endTime){
+      	     	$await(Jscex.Async.sleep(10));
+                time = time+1;
+	    }
+	    var img = document.getElementById("img16");
+            ctx.drawImage(img, 265, 90, 510, 680);
+	    var time = 1;
+	    while(time < endTime){
+      	     	$await(Jscex.Async.sleep(10));
+                time = time+1;
+	    }
+	    var img = document.getElementById("img17");
+            ctx.drawImage(img, 265, 90, 510, 680);
+	    var time = 1;
+	    while(time < endTime){
+      	     	$await(Jscex.Async.sleep(10));
+                time = time+1;
+	    }
+	    var img = document.getElementById("img18");
+            ctx.drawImage(img, 265, 90, 510, 680);
+	    var time = 1;
+	    while(time < endTime){
+      	     	$await(Jscex.Async.sleep(10));
+                time = time+1;
+	    }
+	    var img = document.getElementById("img19");
+            ctx.drawImage(img, 265, 90, 510, 680);
+	    var time = 1;
+	    while(time < endTime){
+      	     	$await(Jscex.Async.sleep(10));
+                time = time+1;
+	    }
+	    var img = document.getElementById("img20");
+            ctx.drawImage(img, 265, 90, 510, 680);
+	    var time = 1;
+	    while(time < endTime){
+      	     	$await(Jscex.Async.sleep(10));
+                time = time+1;
+	    }
 	}));
 
         var seedAnimate = eval(Jscex.compile("async", function () {
@@ -163,6 +310,8 @@
             while (hold) {
                 $await(Jscex.Async.sleep(10));
             }
+	    var ctx = tree.ctx;
+            ctx.clearRect(265, 90, 510, 680);
             while (seed.canScale()) {
                 seed.scale(0.95);
                 $await(Jscex.Async.sleep(10));
